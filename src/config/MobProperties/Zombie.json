@@ -1,0 +1,9 @@
+{
+  "_name": "Zombie",
+  "drops": [{
+	"function" : "remove",
+	"id" : "minecraft:iron_ingot"
+	}],
+  "pre_stats": [],
+  "stats": []
+}

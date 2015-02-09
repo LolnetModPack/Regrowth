@@ -1,0 +1,14 @@
+{
+  "name": "Regrowth Package",
+  "title": "Regrowth",
+  "gameVersion": "1.7.10",
+  "launch": {
+    "flags": []
+  },
+  "userFiles": {
+    "include": [
+      "servers.dat",
+      "options.txt"
+    ]
+  }
+}
