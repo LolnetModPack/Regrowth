@@ -53,6 +53,8 @@ val regenSeeds = <magicalcrops:magicalcrops_PotionSeedsRegen>;
 val nightVisSeeds = <magicalcrops:magicalcrops_PotionSeedsNight>;
 val speedSeeds = <magicalcrops:magicalcrops_PotionSeedsSpeed>;
 val rutileSeeds = <AgriCraft:seedRutile>;
+val amberSeeds = <AgriCraft:seedAmber>;
+val cinnabarSeeds = <AgriCraft:seedCinnabar>;
 
 //Essences
 val redstoneEssence = <magicalcrops:magicalcrops_CropEssence:1>;
@@ -99,6 +101,8 @@ val nightVisionPetal = <magicalcrops:magicalcrops_PotionPetals:4>;
 val speedPetal = <magicalcrops:magicalcrops_PotionPetals:5>;
 val natureEssence = <magicalcrops:magicalcrops_CropEssence>;
 val rutileEssence = <Quadrum:rutileEssence>;
+val amberEssence = <Quadrum:amberEssence>;
+val cinnabarEssence = <Quadrum:cinnabarEssence>;
 
 //Materials
 val infusedDiamond = <magicalcrops:magicalcrops_ArmourMaterials>;
@@ -144,6 +148,20 @@ val marble = <chisel:marble>;
 val granite = <chisel:granite>;
 val andesite = <chisel:andesite>;
 val diorite = <chisel:diorite>;
+val gravel = <minecraft:gravel>;
+val quarriedStone = <Railcraft:cube:7>;
+val abyssalStone = <Railcraft:cube:6>;
+val redRock = <ExtrabiomesXL:terrain_blocks1>;
+val crackedSand = <ExtrabiomesXL:terrain_blocks2>;
+val cloud = <Natura:Cloud>;
+val heatSand = <Natura:heatsand>;
+val taintedSoil = <Natura:soil.tainted>;
+val packedIce = <minecraft:packed_ice>;
+val necroBone = <TConstruct:materials:8>;
+val oreAmber = <Thaumcraft:blockCustomOre:7>;
+val oreCinnabar = <Thaumcraft:blockCustomOre>;
+val amber = <Thaumcraft:ItemResource:6>;
+val quicksilver = <Thaumcraft:ItemResource:3>;
 
 //Runes
 val waterRune = <Botania:rune>;
@@ -172,16 +190,45 @@ val reekOfMisfortune = <witchery:ingredient:35>;
 //add rutile essence -> ore crafting recipe
 recipes.addShaped(oreRutile * 2, [[rutileEssence, rutileEssence, rutileEssence], [rutileEssence, null, rutileEssence], [rutileEssence, rutileEssence, rutileEssence]]);
 
-//add recipe for limestone from earth and water essence
+//add amber essence -> ore crafting recipe
+recipes.addShaped(oreAmber * 4, [[amberEssence, amberEssence, amberEssence], [amberEssence, null, amberEssence], [amberEssence, amberEssence, amberEssence]]);
+//add cinnabar essence -> ore crafting recipe
+recipes.addShaped(oreCinnabar * 4, [[cinnabarEssence, cinnabarEssence, cinnabarEssence], [cinnabarEssence, null, cinnabarEssence], [cinnabarEssence, cinnabarEssence, cinnabarEssence]]);
+
+//add wither essence -> necrotic bone recipe
+recipes.addShaped(necroBone, [[null, null, witherEssence], [null, witherEssence, null], [witherEssence, null, null]]);
+//add creeper essence -> creeper heart recipe
+recipes.addShaped(creeperHeart, [[null, creeperEssence, creeperEssence], [creeperEssence, creeperEssence, creeperEssence], [creeperEssence, creeperEssence, creeperEssence]]);
+
+////add recipes for decor/building blocks from elemental essences
+//limestone
 recipes.addShaped(limestone * 16, [[waterEssence, waterEssence, waterEssence], [earthEssence, earthEssence, earthEssence]]);
-
-//add recipe for marble from earth and air essence
+//marble
 recipes.addShaped(marble * 16, [[earthEssence, airEssence], [earthEssence, earthEssence]]);
-
-//add recipes for granite, diorite and andesite from earth and fire essences
+//granite
 recipes.addShaped(granite * 32, [[fireEssence, earthEssence], [earthEssence, earthEssence]]);
+//diorite
 recipes.addShaped(diorite * 32, [[earthEssence, fireEssence], [earthEssence, earthEssence]]);
+//andesite
 recipes.addShaped(andesite * 32, [[earthEssence, earthEssence], [fireEssence, earthEssence]]);
+//gravel
+recipes.addShaped(gravel * 32, [[earthEssence, null, earthEssence], [null, earthEssence, null], [earthEssence, null, earthEssence]]);
+//quarried stone
+recipes.addShaped(quarriedStone * 32, [[null, airEssence, null], [airEssence, earthEssence, airEssence], [earthEssence, earthEssence, earthEssence]]);
+//abyssal stone
+recipes.addShaped(abyssalStone * 32, [[null, waterEssence, null], [waterEssence, earthEssence, waterEssence], [earthEssence, earthEssence, earthEssence]]);
+//cracked Sand
+recipes.addShaped(crackedSand * 32, [[null, earthEssence, null], [earthEssence, null, earthEssence], [null, earthEssence, null]]);
+//red rock
+recipes.addShaped(redRock * 32, [[earthEssence, fireEssence, earthEssence], [fireEssence, null, fireEssence], [earthEssence, fireEssence, earthEssence]]);
+//cloud
+recipes.addShaped(cloud * 8, [[airEssence, airEssence, airEssence], [airEssence, airEssence, airEssence]]);
+//heat sand
+recipes.addShaped(heatSand * 24, [[earthEssence, fireEssence, earthEssence], [fireEssence, netherEssence, fireEssence], [earthEssence, fireEssence, earthEssence]]);
+//tainted soil
+recipes.addShaped(taintedSoil * 24, [[earthEssence, earthEssence, earthEssence], [earthEssence, netherEssence, earthEssence], [earthEssence, earthEssence, earthEssence]]);
+//packed ice
+recipes.addShaped(packedIce * 16, [[waterEssence, airEssence], [airEssence, waterEssence]]);
 
 //////Readding new seed recipes
 ////Tier 1
@@ -220,7 +267,7 @@ RuneAltar.addRecipe(goldSeeds, [essenceSeeds, essenceRegular, essenceRegular, es
 //skeleton seeds
 RuneAltar.addRecipe(skeletonSeeds, [essenceSeeds, essenceRegular, essenceRegular, essenceRegular, earthRune, earthRune, <minecraft:bone>, <minecraft:bone>], 12000);
 //exp seeds
-RuneAltar.addRecipe(expSeeds, [essenceSeeds, essenceRegular, essenceRegular, essenceRegular, essenceStrong, manaRune, manaRune, <minecraft:experience_bottle>, <minecraft:experience_bottle>], 14000);
+RuneAltar.addRecipe(expSeeds, [essenceSeeds, essenceRegular, essenceRegular, essenceRegular, essenceRegular, manaRune, manaRune, <minecraft:experience_bottle>, <minecraft:experience_bottle>], 14000);
 
 ////Tier 3
 //redstone seeds
@@ -245,6 +292,10 @@ RuneAltar.addRecipe(speedSeeds, [essenceSeeds, essenceStrong, essenceStrong, ess
 RuneAltar.addRecipe(regenSeeds, [essenceSeeds, essenceStrong, essenceStrong, essenceStrong, essenceStrong, springRune, earthRune, <minecraft:potion:16417>], 27000);
 //Rutile seeds
 RuneAltar.addRecipe(rutileSeeds, [essenceSeeds, essenceStrong, essenceStrong, essenceStrong, essenceStrong, summerRune, winterRune, earthRune, fireRune, blockRutile], 30000);
+//Amber seeds
+RuneAltar.addRecipe(amberSeeds, [essenceSeeds, essenceStrong, essenceStrong, essenceStrong, summerRune, springRune, earthRune, amber, amber], 28000);
+//Cinnabar seeds
+RuneAltar.addRecipe(cinnabarSeeds, [essenceSeeds, essenceStrong, essenceStrong, essenceStrong, winterRune, earthRune, quicksilver, quicksilver], 28000);
 
 ////Tier 4
 //osmium seeds

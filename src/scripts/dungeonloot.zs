@@ -11,6 +11,7 @@ val goldEssence = <magicalcrops:magicalcrops_CropEssence:5>;
 val diamondEssence = <magicalcrops:magicalcrops_CropEssence:3>;
 val emeraldEssence = <magicalcrops:magicalcrops_CropEssence:8>;
 val certusEssence = <magicalcrops:magicalcrops_ModCropEssence:4>;
+val tornVampPage = <witchery:ingredient:160>;
 
 ////Add essences to dungeon chest loot - otherwise only obtainable through quests, and required to craft the seeds
 //Tier 1
@@ -28,23 +29,27 @@ vanilla.loot.addChestLoot("dungeonChest", diamondEssence.weight(5), 1, 1);
 vanilla.loot.addChestLoot("dungeonChest", emeraldEssence.weight(5), 1, 1);
 //Tier 4
 vanilla.loot.addChestLoot("dungeonChest", certusEssence.weight(1), 1, 1);
+//Other
+vanilla.loot.addChestLoot("dungeonChest", tornVampPage.weight(10), 1, 1);
 
-////Add essences to village blacksmith loot - otherwise only obtainable through quests, and required to craft the seeds
+////Add essences to mineshaft loot - otherwise only obtainable through quests, and required to craft the seeds
 //Tier 1
-vanilla.loot.addChestLoot("villageBlacksmith", ironEssence.weight(20), 1, 2);
-vanilla.loot.addChestLoot("villageBlacksmith", copperEssence.weight(20), 1, 2);
-vanilla.loot.addChestLoot("villageBlacksmith", tinEssence.weight(20), 1, 2);
-vanilla.loot.addChestLoot("villageBlacksmith", coalEssence.weight(18), 1, 2);
-vanilla.loot.addChestLoot("villageBlacksmith", netherEssence.weight(15), 1, 2);
+vanilla.loot.addChestLoot("mineshaftCorridor", ironEssence.weight(10), 1, 2);
+vanilla.loot.addChestLoot("mineshaftCorridor", copperEssence.weight(10), 1, 2);
+vanilla.loot.addChestLoot("mineshaftCorridor", tinEssence.weight(10), 1, 2);
+vanilla.loot.addChestLoot("mineshaftCorridor", coalEssence.weight(9), 1, 2);
+vanilla.loot.addChestLoot("mineshaftCorridor", netherEssence.weight(8), 1, 2);
 //Tier 2
-vanilla.loot.addChestLoot("villageBlacksmith", blazeEssence.weight(10), 1, 2);
-vanilla.loot.addChestLoot("villageBlacksmith", aluminumEssence.weight(12), 1, 2);
-vanilla.loot.addChestLoot("villageBlacksmith", goldEssence.weight(10), 1, 2);
+vanilla.loot.addChestLoot("mineshaftCorridor", blazeEssence.weight(5), 1, 2);
+vanilla.loot.addChestLoot("mineshaftCorridor", aluminumEssence.weight(6), 1, 2);
+vanilla.loot.addChestLoot("mineshaftCorridor", goldEssence.weight(5), 1, 2);
 //Tier 3
-vanilla.loot.addChestLoot("villageBlacksmith", diamondEssence.weight(5), 1, 1);
-vanilla.loot.addChestLoot("villageBlacksmith", emeraldEssence.weight(5), 1, 1);
+vanilla.loot.addChestLoot("mineshaftCorridor", diamondEssence.weight(3), 1, 1);
+vanilla.loot.addChestLoot("mineshaftCorridor", emeraldEssence.weight(3), 1, 1);
 //Tier 4
-vanilla.loot.addChestLoot("villageBlacksmith", certusEssence.weight(1), 1, 1);
+vanilla.loot.addChestLoot("mineshaftCorridor", certusEssence.weight(1), 1, 1);
+//Other
+vanilla.loot.addChestLoot("mineshaftCorridor", tornVampPage.weight(10), 1, 1);
 
 ////Removing Loot that breaks progression
 //Forestry Village chest
@@ -90,6 +95,9 @@ vanilla.loot.removeChestLoot("mineshaftCorridor", <minecraft:iron_pickaxe>);
 vanilla.loot.removeChestLoot("mineshaftCorridor", <Thaumcraft:ItemLootBag:*>);
 vanilla.loot.removeChestLoot("mineshaftCorridor", <Thaumcraft:ItemResource:*>);
 vanilla.loot.removeChestLoot("mineshaftCorridor", <appliedenergistics2:item.ItemMultiMaterial:*>);
+vanilla.loot.removeChestLoot("mineshaftCorridor", <Railcraft:cube:2>);
+vanilla.loot.removeChestLoot("mineshaftCorridor", <minecraft:hopper_minecart>);
+vanilla.loot.removeChestLoot("mineshaftCorridor", <minecraft:dye:4>);
 //Ocean Floor Chest
 vanilla.loot.removeChestLoot("oceanFloorChest", <minecraft:diamond>);
 vanilla.loot.removeChestLoot("oceanFloorChest", <minecraft:gold_ingot>);

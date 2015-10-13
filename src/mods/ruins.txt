@@ -30,7 +30,7 @@ templateInstancesMinDistance=30
 # minimum distance a template must have from any other template
 anyRuinsMinDistance=10
 # dimension IDs whitelisted for ruins spawning, add custom dimensions IDs here as needed
-allowedDimensions=0,1,-1,-38
+allowedDimensions=0,1,-1,-37
 
 specific_Ocean=75
 specific_Plains=75
@@ -73,7 +73,7 @@ specific_Mesa=75
 specific_Mesa Plateau F=75
 specific_Mesa Plateau=75
 specific_Storage Cell=75
-specific_Wasteland=250
+specific_Wasteland=20
 specific_Ocean Oil Field=75
 specific_Desert Oil Field=75
 specific_Sunflower Plains=75

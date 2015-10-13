@@ -1,5 +1,6 @@
 ////Imports
 import mods.botania.ManaInfusion;
+import minetweaker.item.IItemStack;
 
 ////Variable declarations
 //EBXL
@@ -34,6 +35,33 @@ val silverbell = <Natura:Rare Sapling:1>;
 val amaranth = <Natura:Rare Sapling:2>;
 val tigerwood = <Natura:Rare Sapling:3>;
 val willow = <Natura:Rare Sapling:4>;
+val nSaplings = [natRedwood, eucalyptus, hopseed, natSakura, ghostwood, bloodwood, darkwood, fusewood, maple, silverbell, amaranth, tigerwood, willow] as IItemStack[];
+
+//Flowers
+val dandelion = <minecraft:yellow_flower>;
+val poppy = <minecraft:red_flower>;
+val orchid = <minecraft:red_flower:1>;
+val allium = <minecraft:red_flower:2>;
+val bluet = <minecraft:red_flower:3>;
+val redTulip = <minecraft:red_flower:4>;
+val orangeTulip = <minecraft:red_flower:5>;
+val whiteTulip = <minecraft:red_flower:6>;
+val pinkTulip = <minecraft:red_flower:7>;
+val daisy = <minecraft:red_flower:8>;
+//Fiddle dee dee
+val potato = <minecraft:potato>;
+val poisonPotato = <minecraft:poisonous_potato>;
+
+//Mushrooms
+val toadStool = <ExtrabiomesXL:flower1:6>;
+val shimmerMush = <Botania:mushroom:*>;
+val glowShroom = <Natura:Glowshroom:*>;
+val infestSpores = <Botania:grassSeeds:2>;
+
+//add extra recipes for infestation spores
+ManaInfusion.addInfusion(infestSpores, toadStool, 6500);
+ManaInfusion.addInfusion(infestSpores, shimmerMush, 6500);
+ManaInfusion.addInfusion(infestSpores, glowShroom, 6500);
 
 //add recipe to make ebxl sapling
 recipes.addShapeless(ebxlAcacia, [mcAcacia, crackedSand]);
@@ -70,3 +98,12 @@ ManaInfusion.addAlchemy(silverbell, maple, 5000);
 ManaInfusion.addAlchemy(amaranth, silverbell, 5000);
 ManaInfusion.addAlchemy(tigerwood, amaranth, 5000);
 ManaInfusion.addAlchemy(willow, tigerwood, 5000);
+
+//Alchemy for potatoes
+//ManaInfusion.addAlchemy(potato, poisonPotato, 5000);
+//ManaInfusion.addAlchemy(poisonPotato, potato, 5000);
+
+//Get rid of stupid saplingTree oredict
+for natSap in nSaplings {
+	<ore:saplingTree>.remove(natSap);
+}
