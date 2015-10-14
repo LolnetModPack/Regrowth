@@ -161,4 +161,5 @@ rice,10,5,10,64,12,false,,0,tradehelp.japaneserice
 paperwall,20,48,128,512,64,,,2*64*64,tradehelp.japanesepaper
 thatched,8,12,128,512,,,,2*64*64,tradehelp.japanesethatch
 
-
+//extra
+powerlesspearl,3*64*64,0,0,0,0,true,,1*64*64

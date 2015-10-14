@@ -1,4 +1,4 @@
-item.deadPlank.name=Dead Wood
+item.deadPlank.name=Dead Wood Planks
 item.refinedSteel.name=Refined Steel
 item.plateOsmium.name=Osmium Plate
 item.plateArdite.name=Ardite Plate
@@ -15,3 +15,4 @@ item.agricraft:seedCinnabar.name=Cinnabar Seeds
 item.agricraft:seedRutile.name=Rutile Seeds
 item.agricraft:seedNature.name=Nature Seeds
 item.agricraft:seedAmber.name=Amber Seeds
+item.saplingDummy.name=Any Sapling

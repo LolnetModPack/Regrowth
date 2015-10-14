@@ -165,6 +165,14 @@ val charredPlank = <Quadrum:charredPlank>;
 val singedStairs = <Quadrum:singedStair>;
 val singedSlab = <Quadrum:singedSlab>;
 val latticeWood = <GardenStuff:lattice_wood:*>;
+val woodSlab = <minecraft:wooden_slab>;
+val plankOak = <minecraft:planks>;
+val plankAlder = <witchery:witchwood:1>;
+val plankHawthorn = <witchery:witchwood:2>;
+val plankRowan = <witchery:witchwood>;
+val slabAlder = <witchery:witchwoodslab:1>;
+val slabHawthorn = <witchery:witchwoodslab:2>;
+val slabRowan = <witchery:witchwoodslab>;
 //Barrel Structural Upgrades
 val struct1 = <JABBA:upgradeStructural>;
 val struct3 = <JABBA:upgradeStructural:2>;
@@ -201,6 +209,14 @@ Lexicon.removePage("botania.entry.manaAlchemy", 19);
 
 //Remove recipe for making cactus from Nature Essence
 recipes.remove(cactus);
+
+//Remove oredict wood slab recipe and manually add dead wood -> oak slab recipe
+recipes.removeShaped(woodSlab, [[<ore:plankWood>, <ore:plankWood>, <ore:plankWood>]]);
+recipes.addShaped(woodSlab * 6, [[plankOak, plankOak, plankOak]]);
+recipes.addShaped(woodSlab * 6, [[deadPlanks, deadPlanks, deadPlanks]]);
+recipes.addShaped(slabAlder *6, [[plankAlder, plankAlder, plankAlder]]);
+recipes.addShaped(slabHawthorn *6, [[plankHawthorn, plankHawthorn, plankHawthorn]]);
+recipes.addShaped(slabRowan *6, [[plankRowan, plankRowan, plankRowan]]);
 
 //make decorative quadrum blocks obtainable, mostly through Chisel
 furnace.addRecipe(singedPlank, <ore:plankWood>);

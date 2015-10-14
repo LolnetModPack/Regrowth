@@ -164,4 +164,5 @@ parchmentMayanComplete,64,0,0,0,0,true,,0,tradehelp.parchments
 maize,3,2,16,32,3,false,,0,tradehelp.mayanfood
 mayangold,64,60,0,512,,,,2*64*64,tradehelp.mayangold
 
-
+//extra
+powerlesspearl,3*64*64,0,0,0,0,true,,1*64*64

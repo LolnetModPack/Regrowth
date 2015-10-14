@@ -213,6 +213,7 @@ planks_pine;minecraft:planks;1;Spruce Wood Planks
 porkchops;minecraft:porkchop;0;Raw Porkchop
 porkchopscooked;minecraft:cooked_porkchop;0;Cooked Porkchop
 potato;minecraft:potato;0;Potato
+powerlesspearl;WitchingGadgets:item.WG_Material;12;Powerless Pearl
 pumpkin;minecraft:pumpkin;0;Pumpkin
 pumpkinseeds;minecraft:pumpkin_seeds;0;Pumpkin Seeds
 purse;millenaire:item.ml_purse;0;item.ml_purse.name

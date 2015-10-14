@@ -2,13 +2,13 @@
 # Created by Ruins mod version 14.6 Ingame Parser
 # authoring Player: thephoenixlodge
 
-weight=1
-embed_into_distance=0
+weight=10
+embed_into_distance=1
 acceptable_target_blocks=ExtrabiomesXL:terrain_blocks2
 unacceptable_target_blocks=flowing_water,water,flowing_lava,lava
 dimensions=7,36,45
-allowable_overhang=0
-max_leveling=2
+allowable_overhang=2
+max_leveling=3
 leveling_buffer=0
 preserve_water=0
 preserve_lava=0

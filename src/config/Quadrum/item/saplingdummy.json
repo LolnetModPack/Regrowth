@@ -1,0 +1,7 @@
+{
+    "name": "saplingDummy",
+    "texture": "saplingAny",
+	"ore-dictionary": [
+		"treeSapling"
+	]
+}

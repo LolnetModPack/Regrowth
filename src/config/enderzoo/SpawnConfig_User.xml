@@ -30,7 +30,7 @@
     </biomeFilter>
   </entry>
   
-  <entry id="DireWolf1" mobName="enderzoo.DireWolf" rate="0" minGroupSize="2" maxGroupSize="6" remove="true">
+  <entry id="DireWolf1" mobName="enderzoo.DireWolf" rate="0" minGroupSize="0" maxGroupSize="0">
     <biomeFilter type="any">
       <biome type="BASE_LAND_TYPES" />
 	  <biome type="OCEAN" />

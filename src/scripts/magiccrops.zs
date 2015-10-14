@@ -150,6 +150,9 @@ val chilli = <magicalcrops:magicalcrops_CropProduce:2>;
 val cucumber = <magicalcrops:magicalcrops_CropProduce:3>;
 val grape = <magicalcrops:magicalcrops_CropProduce:4>;
 val raspberry = <magicalcrops:magicalcrops_CropProduce:5>;
+val quartzCertus = <appliedenergistics2:item.ItemMultiMaterial>;
+val endPortal = <minecraft:end_portal>;
+val endPortalFrame = <minecraft:end_portal_frame>;
 //Runes
 val waterRune = <Botania:rune>;
 val fireRune = <Botania:rune:1>;
@@ -179,6 +182,13 @@ ManaInfusion.addInfusion(essenceSeeds, seeds, 2500);
 //add osmium essence -> ore crafting recipe
 recipes.remove(oreOsmium);
 recipes.addShaped(oreOsmium * 2, [[osmiumEssence, osmiumEssence, osmiumEssence], [osmiumEssence, null, osmiumEssence], [osmiumEssence, osmiumEssence, osmiumEssence]]);
+
+//add certus essence -> quartz crafting
+recipes.addShaped(quartzCertus * 2, [[certusEssence, certusEssence, certusEssence], [certusEssence, null, certusEssence], [certusEssence, certusEssence, certusEssence]]);
+
+//change ender essence recipe to produce end portal frame rather than end portal block
+recipes.remove(endPortal);
+recipes.addShaped(endPortalFrame, [[enderEssence, enderEssence, enderEssence], [enderEssence, enderEssence, enderEssence], [enderEssence, enderEssence, enderEssence]]);
 
 //change infusion stone recipes
 recipes.remove(infusionStoneWeak);

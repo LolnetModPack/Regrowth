@@ -23,5 +23,10 @@
 		}]
 	}],
   "pre_stats": [],
-  "stats": []
+  "stats": [{
+	"function": "modifier",
+	"attribute": "generic.movementSpeed",
+	"value": 0.5,
+	"operator": 1
+	}]
 }

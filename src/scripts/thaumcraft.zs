@@ -43,6 +43,20 @@ val shards = <Thaumcraft:ItemShard:*>;
 val thaumium = <Thaumcraft:ItemResource:2>;
 val taintTendril = <Thaumcraft:ItemResource:12>;
 val taintGoo = <Thaumcraft:ItemResource:11>;
+val brainJar = <Thaumcraft:blockJar:1>;
+val lodestone = <Thaumcraft:ItemCompassStone>;
+val obelisk = <Thaumcraft:ItemEldritchObject:4>;
+val voidBlock = <WitchingGadgets:tile.WG_MetalDevice.name:7>;
+val voidIngot = <Thaumcraft:ItemResource:16>;
+val crimsonHood = <Thaumcraft:ItemHelmetCultistRobe>;
+val crimsonHelm = <Thaumcraft:ItemHelmetCultistPlate>;
+val crimsonRobe = <Thaumcraft:ItemChestplateCultistRobe>;
+val crimsonChest = <Thaumcraft:ItemChestplateCultistPlate>;
+val crimsonLegs = <Thaumcraft:ItemLeggingsCultistRobe>;
+val crimsonGreaves = <Thaumcraft:ItemLeggingsCultistPlate>;
+val crimsonBoots = <Thaumcraft:ItemBootsCultist>;
+val crimsonBook = <Thaumcraft:ItemEldritchObject:1>;
+val thaumonomicon = <Thaumcraft:ItemThaumonomicon>;
 
 //ArcaneArteries
 val arcaneBlade = <arcanearteries:arcanearteries thaumicKnife>.withTag({sacrifice: 0 as byte});
@@ -52,7 +66,8 @@ val sacrificialKnife = <AWWayofTime:sacrificialKnife>.withTag({sacrifice: 0 as b
 //Other
 val manaLens = <Botania:lens>;
 val gold = <minecraft:gold_ingot>;
-
+val sinisterNode = <Thaumcraft:BlockJarNodeItem>.withTag({nodetype: 2, RepairCost: 2, Aspects: [{amount: 6, key: "exanimis"}, {amount: 6, key: "mortuus"}, {amount: 6, key: "tenebrae"}], display: {Name: "Sinister Node in a Jar"}, nodemod: 1, nodeid: "0:581:64:-539"});
+val jarredNode = <Thaumcraft:BlockJarNodeItem>;
 
 //add TC sapling recipes
 RuneAltar.addRecipe(saplingGreatwood, [seedTreefyd, essenceStrong, essenceStrong, essenceStrong, natureEssence, natureEssence, saplingRowan, saplingAlder, saplingHawthorn], 20000);
@@ -69,6 +84,14 @@ ManaInfusion.addAlchemy(oreCinnabar, oreAmber, 8000);
 //Add alchemy to swap between taint tendrils and goo
 ManaInfusion.addAlchemy(taintTendril, taintGoo, 15000);
 ManaInfusion.addAlchemy(taintGoo, taintTendril, 15000);
+
+//Add alchemy to swap between crimson plate and robes
+ManaInfusion.addAlchemy(crimsonHelm, crimsonHood, 30000);
+ManaInfusion.addAlchemy(crimsonHood, crimsonHelm, 30000);
+ManaInfusion.addAlchemy(crimsonRobe, crimsonChest, 30000);
+ManaInfusion.addAlchemy(crimsonChest, crimsonRobe, 30000);
+ManaInfusion.addAlchemy(crimsonLegs, crimsonGreaves, 30000);
+ManaInfusion.addAlchemy(crimsonGreaves, crimsonLegs, 30000);
 
 //Force refresh the table recipe in the thaumonomicon
 Research.refreshResearchRecipe("TABLE");
@@ -121,3 +144,45 @@ Warp.addToResearch("DAGGER", 1);
 Warp.addToItem(thaumRazor, 1);
 //Remove infusion recipe for arcane blade
 Infusion.removeRecipe(arcaneBlade);
+
+//Sinister Node infusion
+Infusion.addRecipe("SINISTERNODE", jarredNode, [totem, obsidianTile, brainJar, totem, obsidianTile, totem, obsidianTile, lodestone, totem, obsidianTile], "exanimis 16, mortuus 16, tenebrae 16", sinisterNode, 6);
+//Sinister Node Research
+Research.addResearch("SINISTERNODE", "ARTIFICE", "mortuus 6, tenebrae 6, exanimis 6", -4, 11, 6, sinisterNode);
+game.setLocalization("en_US", "tc.research_name.SINISTERNODE", "Sinister Nodes");
+game.setLocalization("en_US", "tc.research_text.SINISTERNODE", "[RG]Darkened Aura");
+Research.addPrereq("SINISTERNODE", "TOTEM", true);
+Research.addPrereq("SINISTERNODE", "SINSTONE", true);
+Research.addPrereq("SINISTERNODE", "NODEJAR", true);
+Research.addPrereq("SINISTERNODE", "JARBRAIN", false);
+Research.addPage("SINISTERNODE", "sinisternode.research_page.info");
+game.setLocalization("en_US", "sinisternode.research_page.info", "A common motif with the old obsidian totems was the presence of a sinister node, dark enough to corrupt the world around around it. Maybe there is something to be learned from these, and recreating them syntheticially may prove insightful.");
+Research.addInfusionPage("SINISTERNODE", sinisterNode);
+Warp.addToResearch("SINISTERNODE", 3);
+
+//Eldritch Obelisk infusion
+Infusion.addRecipe("BUILDOBELISK", voidBlock, [voidIngot, crimsonHelm, crimsonBook, totem, voidIngot, crimsonHood, crimsonBook, totem], "alienis 32, tenebrae 32, praecantatio 16, vacuos 16", obelisk, 8);
+//Obelisk Research
+Research.addResearch("BUILDOBELISK", "ELDRITCH", "alienis 12, tenebrae 12, vacuos 12", -4, -1, 8, obelisk);
+game.setLocalization("en_US", "tc.research_name.BUILDOBELISK", "Eldritch Obelisks");
+game.setLocalization("en_US", "tc.research_text.BUILDOBELISK", "[RG]Watch where you tread");
+Research.addPrereq("BUILDOBELISK", "CRIMSONBOOK", false);
+Research.addPrereq("BUILDOBELISK", "VOIDMETAL", true);
+Research.addPage("BUILDOBELISK", "buildobelisk.research_page.info");
+game.setLocalization("en_US", "buildobelisk.research_page.info", "It's coming back to you now. The so called crimson cult was often found clustered around strange obelisks in the distant past. You don't know what might have happened to these structures or the cultists now; perhaps one may be found if you were to wander far enough, but its hard to say. <LINE>You can however vaguely remember what they were like, and by applying your knowledge of thaumatrugy, may just be able to recreate them. You feel like you're missing the most sinister part of the construction necessary for it to function however...");
+Research.addInfusionPage("BUILDOBELISK", obelisk);
+Warp.addToResearch("BUILDOBELISK", 4);
+Warp.addToItem(obelisk, 4);
+
+//Crimson book infusion
+Infusion.addRecipe("CRIMSONBOOK", thaumonomicon, [voidIngot, crimsonHelm, crimsonChest, crimsonGreaves, crimsonBoots, crimsonLegs, crimsonRobe, crimsonHood], "cognitio 16, sensus 16, alienis 16, tenebrae 16", crimsonBook, 5);
+//Crimson book research
+Research.addResearch("CRIMSONBOOK", "ELDRITCH", "cognitio 6, alienis 6, tenebrae 6", -2, -2, 4, crimsonBook);
+game.setLocalization("en_US", "tc.research_name.CRIMSONBOOK", "Occult Knowledge");
+game.setLocalization("en_US", "tc.research_text.CRIMSONBOOK", "[RG]Do you really want to know?");
+Research.addPrereq("CRIMSONBOOK", "ELDRITCHMAJOR", false);
+Research.addPage("CRIMSONBOOK", "crimsonbook.research_page.info");
+game.setLocalization("en_US", "crimsonbook.research_page.info", "Infusing Chain armour with blood transformed it into almost ceremonious armour. More curiously this triggered a memory from before of a dark cult that instilled terror across the land. Dare you try and recover their knowledge which was lost?");
+Research.addInfusionPage("CRIMSONBOOK", crimsonBook);
+Warp.addToResearch("CRIMSONBOOK", 3);
+Warp.addToItem(crimsonBook, 3);

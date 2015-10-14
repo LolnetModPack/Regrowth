@@ -98,27 +98,27 @@
     },
     {
       "Entity Class": "gravestone.entity.monster.EntitySkeletonCat",
-      "Weight": 20,
-      "Min Group Count": 2,
-      "Max Group Count": 4
+      "Weight": 10,
+      "Min Group Count": 1,
+      "Max Group Count": 3
     },
     {
       "Entity Class": "gravestone.entity.monster.EntitySkeletonDog",
-      "Weight": 20,
-      "Min Group Count": 2,
-      "Max Group Count": 4
+      "Weight": 10,
+      "Min Group Count": 1,
+      "Max Group Count": 3
     },
     {
       "Entity Class": "gravestone.entity.monster.EntityZombieCat",
-      "Weight": 20,
-      "Min Group Count": 2,
-      "Max Group Count": 4
+      "Weight": 10,
+      "Min Group Count": 1,
+      "Max Group Count": 3
     },
     {
       "Entity Class": "gravestone.entity.monster.EntityZombieDog",
-      "Weight": 20,
-      "Min Group Count": 2,
-      "Max Group Count": 4
+      "Weight": 10,
+      "Min Group Count": 1,
+      "Max Group Count": 3
     }
   ],
   "Spawnable Water Creatures": [

@@ -227,7 +227,7 @@ SeedMutation.add(seedCotton, seedBarley, seedDandelion);
 SeedMutation.add(seedMandrake, seedBelladonna, seedPotato);
 //water artichoke
 SeedMutation.add(seedArtichoke, seedMandrake, seedBelladonna);
-BaseBlock.set(seedArtichoke, water, 2, true);
+//BaseBlock.set(seedArtichoke, water, 2, true);
 //snowbell
 SeedMutation.add(seedSnowbell, seedArtichoke, seedMandrake);
 //wolfsbane
@@ -258,11 +258,15 @@ SeedMutation.add(seedGrape, seedBlueberry, seedPumpkin);
 //nature
 SeedMutation.add(seedNature, seedEssence, seedSugarCane);
 //nether wart
-Brightness.set(seedNetherWart, 0, 15);
+Brightness.set(seedNetherWart, 0, 16);
+//mushrooms
+Brightness.set(seedShroomBrown, 0, 16);
+Brightness.set(seedShroomRed, 0, 16);
 //Taint seeds
 SeedMutation.add(seedTaintTendril, seedCinderPearl, seedShimmerLeaf);
 BaseBlock.clear(seedTaintTendril);
 //Vishroom seeds
 SeedMutation.add(seedVishroom, seedShroomRed, seedShroomBrown);
+Brightness.set(seedVishroom, 0, 16);
 //Shimmerleaf seeds
 BaseBlock.clear(seedShimmerLeaf);

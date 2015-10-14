@@ -199,3 +199,5 @@ dye_brown,0,0,0,0,16*64
 dye_red,0,0,0,0,4
 dye_black,0,0,0,0,8
 
+//extra
+powerlesspearl,3*64*64,0,0,0,0,true,,1*64*64

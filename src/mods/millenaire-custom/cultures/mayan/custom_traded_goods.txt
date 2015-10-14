@@ -1,0 +1,2 @@
+//name, selling price, buying price, reserved quantity, target quantity, foreign merchant price, auto-generated, needed equipment(deprecated), minimum reputation,  desc code for the help screen
+powerlesspearl,3*64*64,0,0,0,0,true,,1*64*64
