@@ -99,6 +99,17 @@ Found creative tab: tabWitchery
 Setting up ForgeMicroblock Library...
 Setting up BuildCraft Library...
 Setting up Applied Energistics 2 Library...
+Loading table of contents for module: contents, 1.0, Author: thephoenixlodge
+Loading: mek.js
+override called. Params: Mekanism, MachineBlock, 0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15
+Regex match found! Mekanism:MachineBlock matches Mekanism:MachineBlock.
+Found ItemStack Mekanism:MachineBlock. 1xtile.MachineBlock@0
+override called. Params: Mekanism, MachineBlock2, 0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15
+Regex match found! Mekanism:MachineBlock2 matches Mekanism:MachineBlock2.
+Found ItemStack Mekanism:MachineBlock2. 1xtile.MachineBlock2@0
+override called. Params: Mekanism, MachineBlock3, 1,3
+Regex match found! Mekanism:MachineBlock3 matches Mekanism:MachineBlock3.
+Found ItemStack Mekanism:MachineBlock3. 1xtile.MachineBlock3@0
 Loading table of contents for module: custom_nei_filters, 1.0, Author: denoflionsx
 Bootstrap setting found. Loading: Bootstrap.js
 Loading: vanilla.js
@@ -143,12 +154,12 @@ override called. Params: Mekanism, GlowPanel, 0
 Regex match found! Mekanism:GlowPanel matches Mekanism:GlowPanel.
 Found ItemStack Mekanism:GlowPanel. 64xitem.GlowPanel@0
 Loading: ForgeMicroblock.js
-getRandomMaterial called. Returned: Mekanism:BasicBlock_10
-obliterate_microblocks called (version in info.inpureprojects.core.NEI.gtfoMicroblocks.ScriptObjects.ForgeMicroblockObject). Params: 1,2,4,257,258,260,513,514,516,769,770,772, Mekanism:BasicBlock_10
+getRandomMaterial called. Returned: Mekanism:BasicBlock_15
+obliterate_microblocks called (version in info.inpureprojects.core.NEI.gtfoMicroblocks.ScriptObjects.ForgeMicroblockObject). Params: 1,2,4,257,258,260,513,514,516,769,770,772, Mekanism:BasicBlock_15
 Loading: ExtraUtilities.js
 Loading: BuildCraft.js
-getFacadesSize called. Returned: 3153
-obliterate_microblocks called (version in info.inpureprojects.core.NEI.gtfoMicroblocks.ScriptObjects.BCObject). Params: 476
+getFacadesSize called. Returned: 3168
+obliterate_microblocks called (version in info.inpureprojects.core.NEI.gtfoMicroblocks.ScriptObjects.BCObject). Params: 561
 Loading: Bibliocraft.js
 override called. Params: BiblioCraft, *, 0
 Regex match found! BiblioCraft:* matches BiblioCraft:Armor Stand.
@@ -284,8 +295,8 @@ Found ItemStack BiblioCraft:tile.BiblioFramedChest. 64xtile.BiblioFramedChest@0
 Loading: AppliedEnergistics2.js
 getFacadeItem called. Returned: appliedenergistics2:item.ItemFacade
 getSubTypes called.
-getNumberOfTypes called. Returned: 2160
-override called. Params: appliedenergistics2, item.ItemFacade, 1889
+getNumberOfTypes called. Returned: 2168
+override called. Params: appliedenergistics2, item.ItemFacade, 382
 Regex match found! appliedenergistics2:item.ItemFacade matches appliedenergistics2:item.ItemFacade.
 Found ItemStack appliedenergistics2:item.ItemFacade. 64xitem.appliedenergistics2.ItemFacade@0
 Loading: Tcon.js

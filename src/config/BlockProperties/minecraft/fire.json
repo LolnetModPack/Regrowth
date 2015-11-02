@@ -1,0 +1,353 @@
+{
+  "_name": "minecraft:fire",
+  "stats": {
+    "opacity": 0,
+    "brightness": 15,
+    "hardness": 0.0,
+    "resistance": 0.0,
+    "sound": "wood",
+    "slipperiness": 0.6,
+    "tool_data": [],
+    "fire_data": [
+      {
+        "_name": "CarpentersBlocks:blockCarpentersSlope",
+        "flammability": 20,
+        "spread": 5
+      },
+      {
+        "_name": "minecraft:wool",
+        "flammability": 60,
+        "spread": 30
+      },
+      {
+        "_name": "ExtrabiomesXL:mini_log_1",
+        "flammability": 5,
+        "spread": 5
+      },
+      {
+        "_name": "minecraft:double_wooden_slab",
+        "flammability": 20,
+        "spread": 5
+      },
+      {
+        "_name": "minecraft:tnt",
+        "flammability": 100,
+        "spread": 15
+      },
+      {
+        "_name": "CarpentersBlocks:blockCarpentersSafe",
+        "flammability": 20,
+        "spread": 5
+      },
+      {
+        "_name": "witchery:witchleaves",
+        "flammability": 60,
+        "spread": 30
+      },
+      {
+        "_name": "CarpentersBlocks:blockCarpentersBarrier",
+        "flammability": 20,
+        "spread": 5
+      },
+      {
+        "_name": "CarpentersBlocks:blockCarpentersStairs",
+        "flammability": 20,
+        "spread": 5
+      },
+      {
+        "_name": "ExtrabiomesXL:grass",
+        "flammability": 100,
+        "spread": 60
+      },
+      {
+        "_name": "minecraft:oak_stairs",
+        "flammability": 20,
+        "spread": 5
+      },
+      {
+        "_name": "witchery:witchwood",
+        "flammability": 20,
+        "spread": 5
+      },
+      {
+        "_name": "minecraft:log",
+        "flammability": 5,
+        "spread": 5
+      },
+      {
+        "_name": "minecraft:carpet",
+        "flammability": 20,
+        "spread": 60
+      },
+      {
+        "_name": "minecraft:birch_stairs",
+        "flammability": 20,
+        "spread": 5
+      },
+      {
+        "_name": "minecraft:fence",
+        "flammability": 20,
+        "spread": 5
+      },
+      {
+        "_name": "minecraft:planks",
+        "flammability": 20,
+        "spread": 5
+      },
+      {
+        "_name": "minecraft:wooden_slab",
+        "flammability": 20,
+        "spread": 5
+      },
+      {
+        "_name": "CarpentersBlocks:blockCarpentersDaylightSensor",
+        "flammability": 20,
+        "spread": 5
+      },
+      {
+        "_name": "CarpentersBlocks:blockCarpentersGarageDoor",
+        "flammability": 20,
+        "spread": 5
+      },
+      {
+        "_name": "minecraft:bookshelf",
+        "flammability": 20,
+        "spread": 30
+      },
+      {
+        "_name": "ExtrabiomesXL:cornerlog_oak",
+        "flammability": 5,
+        "spread": 5
+      },
+      {
+        "_name": "witchery:witchwooddoubleslab",
+        "flammability": 20,
+        "spread": 5
+      },
+      {
+        "_name": "CarpentersBlocks:blockCarpentersPressurePlate",
+        "flammability": 20,
+        "spread": 5
+      },
+      {
+        "_name": "ExtrabiomesXL:cornerlog_fir",
+        "flammability": 5,
+        "spread": 5
+      },
+      {
+        "_name": "witchery:spanishmoss",
+        "flammability": 100,
+        "spread": 15
+      },
+      {
+        "_name": "CarpentersBlocks:blockCarpentersLever",
+        "flammability": 20,
+        "spread": 5
+      },
+      {
+        "_name": "minecraft:hay_block",
+        "flammability": 20,
+        "spread": 60
+      },
+      {
+        "_name": "ExtrabiomesXL:log1",
+        "flammability": 5,
+        "spread": 5
+      },
+      {
+        "_name": "ExtrabiomesXL:log2",
+        "flammability": 5,
+        "spread": 5
+      },
+      {
+        "_name": "witchery:wickerbundle",
+        "flammability": 20,
+        "spread": 20
+      },
+      {
+        "_name": "witchery:stairswoodalder",
+        "flammability": 20,
+        "spread": 5
+      },
+      {
+        "_name": "minecraft:log2",
+        "flammability": 5,
+        "spread": 5
+      },
+      {
+        "_name": "minecraft:spruce_stairs",
+        "flammability": 20,
+        "spread": 5
+      },
+      {
+        "_name": "ExtrabiomesXL:leaves_2",
+        "flammability": 60,
+        "spread": 30
+      },
+      {
+        "_name": "ExtrabiomesXL:leaves_3",
+        "flammability": 60,
+        "spread": 30
+      },
+      {
+        "_name": "ExtrabiomesXL:leaves_1",
+        "flammability": 60,
+        "spread": 30
+      },
+      {
+        "_name": "ExtrabiomesXL:leaves_4",
+        "flammability": 60,
+        "spread": 30
+      },
+      {
+        "_name": "CarpentersBlocks:blockCarpentersGate",
+        "flammability": 20,
+        "spread": 5
+      },
+      {
+        "_name": "ExtrabiomesXL:leaf_pile",
+        "flammability": 60,
+        "spread": 30
+      },
+      {
+        "_name": "minecraft:leaves2",
+        "flammability": 60,
+        "spread": 30
+      },
+      {
+        "_name": "minecraft:yellow_flower",
+        "flammability": 100,
+        "spread": 60
+      },
+      {
+        "_name": "CarpentersBlocks:blockCarpentersLadder",
+        "flammability": 20,
+        "spread": 5
+      },
+      {
+        "_name": "ExtrabiomesXL:cornerlog_rainboweucalyptus",
+        "flammability": 5,
+        "spread": 5
+      },
+      {
+        "_name": "witchery:stairswoodhawthorn",
+        "flammability": 1,
+        "spread": 1
+      },
+      {
+        "_name": "CarpentersBlocks:blockCarpentersBed",
+        "flammability": 20,
+        "spread": 5
+      },
+      {
+        "_name": "ExtrabiomesXL:log_elbow_rainbow_eucalyptus",
+        "flammability": 5,
+        "spread": 5
+      },
+      {
+        "_name": "witchery:witchlog",
+        "flammability": 5,
+        "spread": 5
+      },
+      {
+        "_name": "minecraft:red_flower",
+        "flammability": 100,
+        "spread": 60
+      },
+      {
+        "_name": "ExtrabiomesXL:cornerlog_baldcypress",
+        "flammability": 5,
+        "spread": 5
+      },
+      {
+        "_name": "witchery:witchwoodslab",
+        "flammability": 20,
+        "spread": 5
+      },
+      {
+        "_name": "witchery:stairswoodrowan",
+        "flammability": 20,
+        "spread": 5
+      },
+      {
+        "_name": "ExtrabiomesXL:cornerlog_redwood",
+        "flammability": 5,
+        "spread": 5
+      },
+      {
+        "_name": "CarpentersBlocks:blockCarpentersFlowerPot",
+        "flammability": 20,
+        "spread": 5
+      },
+      {
+        "_name": "CarpentersBlocks:blockCarpentersDoor",
+        "flammability": 20,
+        "spread": 5
+      },
+      {
+        "_name": "CarpentersBlocks:blockCarpentersButton",
+        "flammability": 20,
+        "spread": 5
+      },
+      {
+        "_name": "minecraft:leaves",
+        "flammability": 60,
+        "spread": 30
+      },
+      {
+        "_name": "minecraft:jungle_stairs",
+        "flammability": 20,
+        "spread": 5
+      },
+      {
+        "_name": "minecraft:vine",
+        "flammability": 100,
+        "spread": 15
+      },
+      {
+        "_name": "CarpentersBlocks:blockCarpentersTorch",
+        "flammability": 20,
+        "spread": 5
+      },
+      {
+        "_name": "ExtrabiomesXL:log_elbow_baldcypress",
+        "flammability": 5,
+        "spread": 5
+      },
+      {
+        "_name": "minecraft:double_plant",
+        "flammability": 100,
+        "spread": 60
+      },
+      {
+        "_name": "CarpentersBlocks:blockCarpentersHatch",
+        "flammability": 20,
+        "spread": 5
+      },
+      {
+        "_name": "minecraft:tallgrass",
+        "flammability": 100,
+        "spread": 60
+      },
+      {
+        "_name": "CarpentersBlocks:blockCarpentersCollapsibleBlock",
+        "flammability": 20,
+        "spread": 5
+      },
+      {
+        "_name": "minecraft:coal_block",
+        "flammability": 5,
+        "spread": 5
+      },
+      {
+        "_name": "CarpentersBlocks:blockCarpentersBlock",
+        "flammability": 20,
+        "spread": 5
+      }
+    ]
+  },
+  "break_speed": [],
+  "drops": [],
+  "harvest": [],
+  "xp": []
+}

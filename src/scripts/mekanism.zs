@@ -175,7 +175,7 @@ recipes.addShaped(bioGen, [[bioFuel, mekCircuitAdvanced, bioFuel], [reinforcedAl
 //Change factory recipes
 for j, factory in factories {
 	recipes.remove(factory);
-	NEI.addEntry(factory);
+//	NEI.addEntry(factory);
 }
 for i, recipeType in recipeData {
 	recipes.addShaped(factories[0].withTag(recipeType), [[mekCircuitBasic, chipsetIron, mekCircuitBasic], [ingotOsmium, baseMachine[i], ingotOsmium], [plateSteel, mekCircuitAdvanced, plateSteel]]);
@@ -191,47 +191,47 @@ recipes.addShaped(installerElite, [[mekCircuitElite, chipsetDiamond, mekCircuitE
 //Change infuser recipe
 recipes.remove(metallurgicInfuser);
 recipes.addShaped(metallurgicInfuser, [[plateIron, plateOsmium, plateIron], [chipsetRedstone, steelCasing, chipsetRedstone], [plateIron, plateOsmium, plateIron]]);
-NEI.addEntry(metallurgicInfuser);
+//NEI.addEntry(metallurgicInfuser);
 //Change enrichment chamber recipe
 recipes.remove(enrichmentChamber);
 recipes.addShaped(enrichmentChamber, [[mekCircuitBasic, chipsetQuartz, mekCircuitBasic], [ingotOsmium, steelCasing, ingotOsmium], [plateSteel, chipsetIron, plateSteel]]);
-NEI.addEntry(enrichmentChamber);
+//NEI.addEntry(enrichmentChamber);
 //Change osmium compressor recipe
 recipes.remove(osmiumCompressor);
 recipes.addShaped(osmiumCompressor, [[mekCircuitAdvanced, <minecraft:bucket>, mekCircuitAdvanced], [enrichedAlloy, steelCasing, enrichedAlloy], [plateSteel, chipsetGold, plateSteel]]);
-NEI.addEntry(osmiumCompressor);
+//NEI.addEntry(osmiumCompressor);
 //Change combiner recipe
 recipes.remove(combiner);
 recipes.addShaped(combiner, [[mekCircuitElite, <minecraft:stone>, mekCircuitElite], [reinforcedAlloy, steelCasing, reinforcedAlloy], [plateTitanium, chipsetDiamond, plateTitanium]]);
-NEI.addEntry(combiner);
+//NEI.addEntry(combiner);
 //Change crusher recipe
 recipes.remove(crusher);
 recipes.addShaped(crusher, [[mekCircuitBasic, <minecraft:lava_bucket>, mekCircuitBasic], [ingotOsmium, steelCasing, ingotOsmium], [plateSteel, chipsetIron, plateSteel]]);
-NEI.addEntry(crusher);
+//NEI.addEntry(crusher);
 //Change purification chamber recipe
 recipes.remove(purificationChamber);
 recipes.addShaped(purificationChamber, [[mekCircuitAdvanced, plateOsmium, mekCircuitAdvanced], [enrichedAlloy, steelCasing, enrichedAlloy], [plateSteel, chipsetGold, plateSteel]]);
-NEI.addEntry(purificationChamber);
+//NEI.addEntry(purificationChamber);
 //Change energized smelter recipe
 recipes.remove(energizedSmelter);
 recipes.addShaped(energizedSmelter, [[mekCircuitBasic, <ore:glass>, mekCircuitBasic], [ingotOsmium, steelCasing, ingotOsmium], [plateSteel, chipsetIron, plateSteel]]);
-NEI.addEntry(energizedSmelter);
+//NEI.addEntry(energizedSmelter);
 //Change precision sawmill recipe
 recipes.remove(sawmill);
 recipes.addShaped(sawmill, [[mekCircuitBasic, <ore:ingotIron>, mekCircuitBasic], [enrichedAlloy, steelCasing, enrichedAlloy], [plateSteel, chipsetIron, plateSteel]]);
-NEI.addEntry(sawmill);
+//NEI.addEntry(sawmill);
 //Change chemical injection chamber recipe
 recipes.remove(chemicalInjector);
 recipes.addShaped(chemicalInjector, [[mekCircuitElite, <ore:ingotGold>, mekCircuitElite], [reinforcedAlloy, steelCasing, reinforcedAlloy], [plateTitanium, chipsetDiamond, plateTitanium]]);
-NEI.addEntry(chemicalInjector);
+//NEI.addEntry(chemicalInjector);
 //Change electric pump recipe
 recipes.remove(electricPump);
 recipes.addShaped(electricPump, [[null, <minecraft:bucket>, null], [enrichedAlloy, steelCasing, enrichedAlloy], [plateOsmium, mekCircuitBasic, plateOsmium]]);
-NEI.addEntry(electricPump);
+//NEI.addEntry(electricPump);
 //Change rotary condensentrator recipe
 recipes.remove(rotaryCondensentrator);
 recipes.addShaped(rotaryCondensentrator, [[mekCircuitAdvanced, <ore:glass>, mekCircuitAdvanced], [gasTank, steelCasing, portableTank], [plateSteel, energyTablet, plateSteel]]);
-NEI.addEntry(rotaryCondensentrator);
+//NEI.addEntry(rotaryCondensentrator);
 //Change energy tablet recipe
 recipes.remove(energyTablet);
 recipes.addShaped(energyTablet, [[chipsetIron, mekCircuitBasic, chipsetIron], [enrichedAlloy, plateOsmium, enrichedAlloy], [plateSteel, mekCircuitBasic, plateSteel]]);
@@ -241,27 +241,27 @@ recipes.addShaped(gasTank, [[plateSteel, <ore:dustIron>, plateSteel], [plateStee
 //Change chemical oxidiser recipe
 recipes.remove(chemicalOxidiser);
 recipes.addShaped(chemicalOxidiser, [[mekCircuitElite, reinforcedAlloy, mekCircuitElite], [electricChest, steelCasing, gasTank], [plateTitanium, energyTablet, plateTitanium]]);
-NEI.addEntry(chemicalOxidiser);
+//NEI.addEntry(chemicalOxidiser);
 //Change chemical infuser recipe
 recipes.remove(chemicalInfuser);
 recipes.addShaped(chemicalInfuser, [[mekCircuitElite, reinforcedAlloy, mekCircuitElite], [gasTank, steelCasing, gasTank], [plateTitanium, energyTablet, plateTitanium]]);
-NEI.addEntry(chemicalInfuser);
+//NEI.addEntry(chemicalInfuser);
 //Change chemical dissolution chamber recipe
 recipes.remove(chemicalDissolution);
 recipes.addShaped(chemicalDissolution, [[mekCircuitUltimate, atomicAlloy, mekCircuitUltimate], [gasTank, steelCasing, portableTank], [plateTitanium, energyTablet, plateTitanium]]);
-NEI.addEntry(chemicalDissolution);
+//NEI.addEntry(chemicalDissolution);
 //Change chemical washer recipe
 recipes.remove(chemicalWasher);
 recipes.addShaped(chemicalWasher, [[mekCircuitUltimate, atomicAlloy, mekCircuitUltimate], [portableTank, steelCasing, portableTank], [plateTitanium, energyTablet, plateTitanium]]);
-NEI.addEntry(chemicalWasher);
+//NEI.addEntry(chemicalWasher);
 //Change chemical crystallizer recipe
 recipes.remove(chemicalCrystallizer);
 recipes.addShaped(chemicalCrystallizer, [[mekCircuitUltimate, atomicAlloy, mekCircuitUltimate], [portableTank, steelCasing, electricChest], [plateTitanium, energyTablet, plateTitanium]]);
-NEI.addEntry(chemicalCrystallizer);
+//NEI.addEntry(chemicalCrystallizer);
 //Change electrolytic seperator recipe
 recipes.remove(electrolyticSeperator);
 recipes.addShaped(electrolyticSeperator, [[mekCircuitAdvanced, electrolyticCore, mekCircuitAdvanced], [portableTank, steelCasing, gasTank], [plateSteel, energyTablet, plateSteel]]);
-NEI.addEntry(electrolyticSeperator);
+//NEI.addEntry(electrolyticSeperator);
 //Change electrolytic core recipe
 recipes.remove(electrolyticCore);
 recipes.addShaped(electrolyticCore, [[enrichedAlloy, <ore:dustOsmium>, chipsetIron], [<ore:dustGold>, mekCircuitBasic, <ore:dustGold>], [chipsetIron, <ore:dustOsmium>, enrichedAlloy]]);
@@ -271,11 +271,11 @@ recipes.addShaped(teleportCore, [[lapis, atomicAlloy, chipsetRedstone], [manaPea
 //Change prc recipe
 recipes.remove(pressurizedReactionChamber);
 recipes.addShaped(pressurizedReactionChamber, [[electricChest, mekCircuitAdvanced, electricChest], [portableTank, enrichmentChamber, reinforcedAlloy], [gasTank, plateTitanium, gasTank]]);
-NEI.addEntry(pressurizedReactionChamber);
+//NEI.addEntry(pressurizedReactionChamber);
 //Change seismic vibrator recipe
 recipes.remove(seismicVibrator);
 recipes.addShaped(seismicVibrator, [[mekCircuitBasic, lapis, mekCircuitBasic], [plateTin, steelCasing, plateTin], [plateSteel, plateTin, plateSteel]]);
-NEI.addEntry(seismicVibrator);
+//NEI.addEntry(seismicVibrator);
 //Change dynamic tank part recipes
 recipes.remove(dynamicTank);
 recipes.remove(dynamicGlass);
@@ -299,22 +299,22 @@ recipes.addShaped(energyCubeUltimate, [[mekCircuitUltimate, energyTablet, mekCir
 //Change digital miner recipe
 recipes.remove(digiMiner);
 recipes.addShaped(digiMiner, [[atomicAlloy, mekCircuitUltimate, atomicAlloy], [logisticalSorter, steelCasing, logisticalSorter], [teleportCore, robit, teleportCore]]);
-NEI.addEntry(digiMiner);
+//NEI.addEntry(digiMiner);
 //Change fluidic plenisher recipe
 recipes.remove(fluidicPlenisher);
 recipes.addShaped(fluidicPlenisher, [[reinforcedAlloy, mekCircuitBasic, reinforcedAlloy], [plateTin, electricPump, plateTin], [null, <minecraft:bucket>, null]]);
-NEI.addEntry(fluidicPlenisher);
+//NEI.addEntry(fluidicPlenisher);
 //Lasers
 recipes.remove(laser);
 recipes.addShaped(laser, [[reinforcedAlloy, energyTablet, null], [bcLaser, steelCasing, chipsetDiamond], [reinforcedAlloy, energyTablet, null]]);
-NEI.addEntry(laser);
+//NEI.addEntry(laser);
 recipes.remove(laserAmp);
 recipes.addShaped(laserAmp, [[plateSteel, plateSteel, plateSteel], [plateSteel, energyCube.onlyWithTag({tier: "Basic"}), chipsetDiamond], [plateSteel, plateSteel, plateSteel]]);
-NEI.addEntry(laserAmp);
+//NEI.addEntry(laserAmp);
 //Solar neutron activator
 recipes.remove(neutronActivator);
 recipes.addShaped(neutronActivator, [[reinforcedAlloy, hdpeSheet, reinforcedAlloy], [mekCircuitElite, steelCasing, mekCircuitElite], [plateArdite, plateArdite, plateArdite]]);
-NEI.addEntry(neutronActivator);
+//NEI.addEntry(neutronActivator);
 //Induction cell casing
 recipes.remove(inductionCasing);
 recipes.addShaped(inductionCasing, [[null, plateSteel, null], [plateSteel, energyTablet, plateSteel], [null, plateSteel, null]]);

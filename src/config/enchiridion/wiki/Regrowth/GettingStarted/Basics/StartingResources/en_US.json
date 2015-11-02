@@ -1,0 +1,33 @@
+{
+  "components": [
+    {
+      "type": "ElementText",
+      "properties": {
+        "text": "Welcome to Regrowth, an HQM centric modpack by thephoenixlodge",
+        "color": -6632142,
+        "x": 38,
+        "y": 223,
+        "width": 336,
+        "height": 26,
+        "size": 2.0
+      }
+    },
+    {
+      "type": "ElementImage",
+      "properties": {
+        "path": "regrowth-cover2big.png",
+        "x": 88,
+        "y": -19,
+        "width": 285,
+        "height": 116,
+        "size": 2.0
+      }
+    }
+  ],
+  "scrollMax": 0,
+  "isPriority": false,
+  "backgroundColor": -301989888,
+  "name": "Opening",
+  "canEdit": true,
+  "saveDir": ""
+}

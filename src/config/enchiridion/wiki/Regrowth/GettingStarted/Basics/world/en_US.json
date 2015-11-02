@@ -1,0 +1,421 @@
+{
+  "components": [
+    {
+      "type": "ElementItem",
+      "properties": {
+        "item": "Quadrum:deadWood",
+        "x": 44,
+        "y": 107,
+        "width": 52,
+        "height": 52,
+        "size": 6.5
+      }
+    },
+    {
+      "type": "ElementItem",
+      "properties": {
+        "item": "Quadrum:deadPlank",
+        "x": 632,
+        "y": 218,
+        "width": 10,
+        "height": 10,
+        "size": 1.25
+      }
+    },
+    {
+      "type": "ElementText",
+      "properties": {
+        "text": "Starting out, the world around you is rather barren, however there are a few resources available to you which are key to starting out in your quest to rebuild the world.",
+        "color": -1,
+        "x": 62,
+        "y": -2,
+        "width": 333,
+        "height": 35,
+        "size": 2.0
+      }
+    },
+    {
+      "type": "ElementItem",
+      "properties": {
+        "item": "Quadrum:blockSlate",
+        "x": 44,
+        "y": 464,
+        "width": 52,
+        "height": 52,
+        "size": 6.5
+      }
+    },
+    {
+      "type": "ElementItem",
+      "properties": {
+        "item": "Quadrum:charredWood",
+        "x": 46,
+        "y": 296,
+        "width": 52,
+        "height": 52,
+        "size": 6.5
+      }
+    },
+    {
+      "type": "ElementText",
+      "properties": {
+        "text": "Dead Wood",
+        "color": -65281,
+        "x": 162,
+        "y": 113,
+        "width": 189,
+        "height": 14,
+        "size": 2.0
+      }
+    },
+    {
+      "type": "ElementText",
+      "properties": {
+        "text": "Charred Wood",
+        "color": -65281,
+        "x": 164,
+        "y": 290,
+        "width": 182,
+        "height": 8,
+        "size": 2.0
+      }
+    },
+    {
+      "type": "ElementText",
+      "properties": {
+        "text": "Drops:",
+        "color": -984833,
+        "x": 162,
+        "y": 137,
+        "width": 44,
+        "height": 18,
+        "size": 2.0
+      }
+    },
+    {
+      "type": "ElementItem",
+      "properties": {
+        "item": "Quadrum:deadPlank",
+        "x": 162,
+        "y": 160,
+        "width": 17,
+        "height": 17,
+        "size": 2.125
+      }
+    },
+    {
+      "type": "ElementItem",
+      "properties": {
+        "item": "minecraft:stick",
+        "x": 202,
+        "y": 159,
+        "width": 18,
+        "height": 18,
+        "size": 2.25
+      }
+    },
+    {
+      "type": "ElementText",
+      "properties": {
+        "text": "Spawns as dead trees, both large and small. Is your initial source of wood, with the Dead wood item (  ) acting as a plank substitute for planks in any ore-dictionary based recipe.",
+        "color": -1,
+        "x": 158,
+        "y": 202,
+        "width": 269,
+        "height": 20,
+        "size": 2.0
+      }
+    },
+    {
+      "type": "ElementText",
+      "properties": {
+        "text": "Drops:",
+        "color": -1,
+        "x": 164,
+        "y": 314,
+        "width": 105,
+        "height": 7,
+        "size": 2.0
+      }
+    },
+    {
+      "type": "ElementItem",
+      "properties": {
+        "item": "minecraft:coal 1",
+        "x": 162,
+        "y": 333,
+        "width": 17,
+        "height": 17,
+        "size": 2.125
+      }
+    },
+    {
+      "type": "ElementItem",
+      "properties": {
+        "item": "witchery:ingredient 18",
+        "x": 202,
+        "y": 332,
+        "width": 17,
+        "height": 17,
+        "size": 2.125
+      }
+    },
+    {
+      "type": "ElementItem",
+      "properties": {
+        "item": "minecraft:stick",
+        "x": 240,
+        "y": 333,
+        "width": 17,
+        "height": 17,
+        "size": 2.125
+      }
+    },
+    {
+      "type": "ElementText",
+      "properties": {
+        "text": "Spawns as part of the Dead Trees, among the regular Dead Wood. Provides easy charcoal for torches and fuel, and is important for the rare drop of Wood Ash, necessary for later making Mutandis.",
+        "color": -1,
+        "x": 164,
+        "y": 368,
+        "width": 272,
+        "height": 56,
+        "size": 2.0
+      }
+    },
+    {
+      "type": "ElementText",
+      "properties": {
+        "text": "Slate",
+        "color": -65281,
+        "x": 162,
+        "y": 463,
+        "width": 143,
+        "height": 7,
+        "size": 2.0
+      }
+    },
+    {
+      "type": "ElementText",
+      "properties": {
+        "text": "Drops:",
+        "color": -1,
+        "x": 162,
+        "y": 486,
+        "width": 57,
+        "height": 7,
+        "size": 2.0
+      }
+    },
+    {
+      "type": "ElementItem",
+      "properties": {
+        "item": "minecraft:flint",
+        "x": 160,
+        "y": 506,
+        "width": 20,
+        "height": 20,
+        "size": 2.5
+      }
+    },
+    {
+      "type": "ElementText",
+      "properties": {
+        "text": "Naturally generating boulders of Slate litter the surface, and are soft enough that you can break it with your fists to collect some flint, perfect for making your first tools.\nNote: Flint is only available from Slate - Gravel has no chance to drop it, though some machine processing will still let you get Flint from Gravel.",
+        "color": -1,
+        "x": 162,
+        "y": 545,
+        "width": 270,
+        "height": 58,
+        "size": 2.0
+      }
+    },
+    {
+      "type": "ElementItem",
+      "properties": {
+        "item": "ExtrabiomesXL:grass 3",
+        "x": 56,
+        "y": 690,
+        "width": 44,
+        "height": 44,
+        "size": 5.5
+      }
+    },
+    {
+      "type": "ElementItem",
+      "properties": {
+        "item": "ExtrabiomesXL:grass 4",
+        "x": 52,
+        "y": 759,
+        "width": 45,
+        "height": 45,
+        "size": 5.625
+      }
+    },
+    {
+      "type": "ElementItem",
+      "properties": {
+        "item": "ExtrabiomesXL:grass 2",
+        "x": 48,
+        "y": 819,
+        "width": 48,
+        "height": 48,
+        "size": 6.0
+      }
+    },
+    {
+      "type": "ElementText",
+      "properties": {
+        "text": "Dead Grass",
+        "color": -65281,
+        "x": 158,
+        "y": 706,
+        "width": 81,
+        "height": 8,
+        "size": 2.0
+      }
+    },
+    {
+      "type": "ElementText",
+      "properties": {
+        "text": "Drops:",
+        "color": -1,
+        "x": 158,
+        "y": 728,
+        "width": 36,
+        "height": 8,
+        "size": 2.0
+      }
+    },
+    {
+      "type": "ElementItem",
+      "properties": {
+        "item": "minecraft:wheat_seeds",
+        "x": 160,
+        "y": 755,
+        "width": 21,
+        "height": 21,
+        "size": 2.625
+      }
+    },
+    {
+      "type": "ElementItem",
+      "properties": {
+        "item": "witchery:seedsbelladonna",
+        "x": 208,
+        "y": 756,
+        "width": 21,
+        "height": 21,
+        "size": 2.625
+      }
+    },
+    {
+      "type": "ElementItem",
+      "properties": {
+        "item": "Botania:grassSeeds 0",
+        "x": 252,
+        "y": 755,
+        "width": 20,
+        "height": 20,
+        "size": 2.5
+      }
+    },
+    {
+      "type": "ElementItem",
+      "properties": {
+        "item": "minecraft:clay_ball",
+        "x": 294,
+        "y": 756,
+        "width": 21,
+        "height": 21,
+        "size": 2.625
+      }
+    },
+    {
+      "type": "ElementItem",
+      "properties": {
+        "item": "Botania:fertilizer",
+        "x": 390,
+        "y": 757,
+        "width": 21,
+        "height": 21,
+        "size": 2.625
+      }
+    },
+    {
+      "type": "ElementItem",
+      "properties": {
+        "item": "minecraft:dye 15",
+        "x": 344,
+        "y": 758,
+        "width": 19,
+        "height": 19,
+        "size": 2.375
+      }
+    },
+    {
+      "type": "ElementText",
+      "properties": {
+        "text": "Dotting the surface of the wasteland are dead strands of grass, which are an important source of many valuable resources early on, including Pasture seeds, which allow you to turn dirt into grass.\nNormal long grass grown with bonemeal has the same drops, but due to being alive, has much improved chances to drop each of these items.",
+        "color": -1,
+        "x": 162,
+        "y": 802,
+        "width": 271,
+        "height": 53,
+        "size": 2.0
+      }
+    },
+    {
+      "type": "ElementItem",
+      "properties": {
+        "item": "minecraft:dirt 0",
+        "x": 44,
+        "y": 976,
+        "width": 52,
+        "height": 52,
+        "size": 6.5
+      }
+    },
+    {
+      "type": "ElementItem",
+      "properties": {
+        "item": "minecraft:cobblestone",
+        "x": 48,
+        "y": 1040,
+        "width": 52,
+        "height": 52,
+        "size": 6.5
+      }
+    },
+    {
+      "type": "ElementText",
+      "properties": {
+        "text": "Dirt and Cobblestone",
+        "color": -65281,
+        "x": 162,
+        "y": 970,
+        "width": 200,
+        "height": 100,
+        "size": 2.0
+      }
+    },
+    {
+      "type": "ElementText",
+      "properties": {
+        "text": "As per usual, these can be found underground, though not much else can, so have fun mining for Dirt!",
+        "color": -1,
+        "x": 162,
+        "y": 996,
+        "width": 267,
+        "height": 51,
+        "size": 2.0
+      }
+    }
+  ],
+  "scrollMax": 1092,
+  "isPriority": false,
+  "backgroundColor": -301989888,
+  "name": "Basic Resources",
+  "canEdit": true,
+  "saveDir": ""
+}

@@ -1,0 +1,21 @@
+{
+  "_name": "millenaire:tile.ml_panes",
+  "stats": {
+    "opacity": 0,
+    "brightness": 0,
+    "hardness": 0.3,
+    "resistance": 1.5,
+    "sound": "cloth",
+    "slipperiness": 0.6,
+    "tool_data": [
+      {
+        "tool": "axe",
+        "level": 0
+      }
+    ]
+  },
+  "break_speed": [],
+  "drops": [],
+  "harvest": [],
+  "xp": []
+}

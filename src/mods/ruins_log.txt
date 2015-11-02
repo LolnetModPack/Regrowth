@@ -1,11 +1,10 @@
 
-Loading excluded list from: C:\Users\Josh\Documents\My Games\Minecraft\MultiMC\instances\Regrowth Dev\minecraft\saves\Copy of Copy of Copy of Copy of\DIM42
+Loading excluded list from: C:\Users\Josh\Documents\My Games\Minecraft\MultiMC\instances\Regrowth Dev\minecraft\saves\Copy of Copy of Copy of Copy of\DIM-42
 No exclusions found for this world.
 
-Loading options from: C:\Users\Josh\Documents\My Games\Minecraft\MultiMC\instances\Regrowth Dev\minecraft\saves\Copy of Copy of Copy of Copy of\DIM42
+Loading options from: C:\Users\Josh\Documents\My Games\Minecraft\MultiMC\instances\Regrowth Dev\minecraft\saves\Copy of Copy of Copy of Copy of\DIM-42
 tries_per_chunk_normal = 30
 chance_to_spawn_normal = 20.0
 templateInstancesMinDistance = 30.0
 anyRuinsMinDistance = 10.0
-Ruins mod loaded successfully for world C:\Users\Josh\Documents\My Games\Minecraft\MultiMC\instances\Regrowth Dev\minecraft\saves\Copy of Copy of Copy of Copy of\DIM42, template files: 21
-1
+Ruins mod loaded successfully for world C:\Users\Josh\Documents\My Games\Minecraft\MultiMC\instances\Regrowth Dev\minecraft\saves\Copy of Copy of Copy of Copy of\DIM-42, template files: 21

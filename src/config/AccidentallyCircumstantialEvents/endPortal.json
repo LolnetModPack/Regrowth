@@ -1,0 +1,49 @@
+{
+	"events":
+		[
+			{
+				"event_type": "INTERACT",
+                "issuer": "ALL_PLAYERS",
+                "action": "RIGHT_BLOCK",
+                "modid": "minecraft",
+                "name": "air",
+                "meta": "0",
+				"ignoreBlock": "true",
+                "tasks":
+					[
+						{
+							"task_type": "COMMAND",
+							"command": "/testruin endPortal ~0 ~0 ~0",
+							"ignorePrivilages": "true",
+							"conditions":  
+								[
+									{
+										"condition_type": "USING",
+										"modid": "Quadrum",
+										"name": "enderPortal",
+										"meta": "0"
+									}
+								]
+						},
+						{
+							"task_type": "INVENTORY_REMOVE",
+							"target_type": "SELF",
+							"target": "",
+							"modid": "Quadrum",
+							"name": "enderPortal",
+							"meta": "0",
+							"count": "1",
+							"conditions":  
+								[
+									{
+										"condition_type": "USING",
+										"modid": "Quadrum",
+										"name": "enderPortal",
+										"meta": "0"
+									}
+								]
+						}
+					]
+			}
+		]
+}

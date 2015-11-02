@@ -152,7 +152,7 @@ val grape = <magicalcrops:magicalcrops_CropProduce:4>;
 val raspberry = <magicalcrops:magicalcrops_CropProduce:5>;
 val quartzCertus = <appliedenergistics2:item.ItemMultiMaterial>;
 val endPortal = <minecraft:end_portal>;
-val endPortalFrame = <minecraft:end_portal_frame>;
+val endPortalFrame = <Quadrum:enderPortal>;
 //Runes
 val waterRune = <Botania:rune>;
 val fireRune = <Botania:rune:1>;
@@ -189,6 +189,7 @@ recipes.addShaped(quartzCertus * 2, [[certusEssence, certusEssence, certusEssenc
 //change ender essence recipe to produce end portal frame rather than end portal block
 recipes.remove(endPortal);
 recipes.addShaped(endPortalFrame, [[enderEssence, enderEssence, enderEssence], [enderEssence, enderEssence, enderEssence], [enderEssence, enderEssence, enderEssence]]);
+endPortalFrame.addTooltip("Places End Portal structure (5x5) centred around your feet, removing blocks if necessary");
 
 //change infusion stone recipes
 recipes.remove(infusionStoneWeak);

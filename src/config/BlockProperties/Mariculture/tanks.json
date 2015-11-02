@@ -1,0 +1,37 @@
+{
+  "_name": "Mariculture:tanks",
+  "stats": {
+    "opacity": 0,
+    "brightness": 0,
+    "resistance": 5.0,
+    "sound": "glass",
+    "slipperiness": 0.6,
+    "tool_data": [
+      {
+        "_meta": 0,
+        "level": 0
+      },
+      {
+        "_meta": 1,
+        "level": 0
+      },
+      {
+        "_meta": 2,
+        "level": 0
+      },
+      {
+        "_meta": 3,
+        "tool": "axe",
+        "level": 1
+      },
+      {
+        "_meta": 4,
+        "level": 0
+      }
+    ]
+  },
+  "break_speed": [],
+  "drops": [],
+  "harvest": [],
+  "xp": []
+}

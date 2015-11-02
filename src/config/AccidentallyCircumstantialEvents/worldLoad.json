@@ -1,0 +1,19 @@
+{
+    "events":
+            [
+{
+    "event_type": "JOIN_WORLD",
+    "target": "ALL_PLAYERS",
+	"noDeathDim": "true",
+	"joinOneEver": "false",
+    "tasks": [
+                {
+                    "task_type": "CHAT",
+					"receiver_type": "SELF",
+					"receiver": "",
+					"message": "Press 'H' to access the Mineopedia for extra information on some mechanics"
+                }
+             ]
+}
+]
+}

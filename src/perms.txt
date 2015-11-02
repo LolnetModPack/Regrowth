@@ -14,6 +14,7 @@ This is a public pack
 (Open:Custom) BiblioCraft by Nuchaz can be found at http://www.bibliocraftmod.com/. The license is, , and can be found http://www.bibliocraftmod.com/?page_id=57#modpacks.
 (Open:Custom) Binnie's Mods by Binnie can be found at http://www.minecraftforum.net/forums/mapping-and-modding/minecraft-mods/1284348-1-7-10-1-6-4-forestry-binnies-mods-1-8-0-2-0-dev. The license is, , and can be found http://minecraft.curseforge.com/mc-mods/223525-binnies-mods.
 (Open:Custom) BiomeTweaker by Superckl can be found at http://minecraft.curseforge.com/mc-mods/228895-biometweaker. The license is, .
+(Open:Custom) Block Properties by FatherToast can be found at http://minecraft.curseforge.com/mc-mods/230368-block-properties. The license is, , and can be found http://www.minecraftforum.net/forums/mapping-and-modding/minecraft-mods/1282771-forge-father-toasts-mods-special-mobs-mob.
 (Open:Custom) Blood Arsenal by Arcaratus can be found at http://www.minecraftforum.net/forums/mapping-and-modding/minecraft-mods/2231288-blood-magic-addon-blood-arsenal. The license is, .
 (Open:Custom) Blood Magic by WayofTime can be found at http://www.minecraftforum.net/topic/1899223-. The license is, .
 (Open:Custom) Botania by Vazkii can be found at http://www.minecraftforum.net/forums/mapping-and-modding/minecraft-mods/1294116-botania-an-innovative-natural-magic-themed-tech. The license is, .

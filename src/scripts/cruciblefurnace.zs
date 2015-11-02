@@ -33,10 +33,10 @@ val oreTin = <Forestry:resources:2>;
 //Crucible.removeRecipe(<minecraft:chainmail_chestplate>);
 //Crucible.removeRecipe(<minecraft:chainmail_helmet>);
 //Crucible.removeRecipe(<minecraft:chainmail_leggings>);
-Crucible.addRecipe(800, <minecraft:chainmail_boots>, <liquid:iron.molten> * 576);
-Crucible.addRecipe(800, <minecraft:chainmail_chestplate>, <liquid:iron.molten> * 1152);
-Crucible.addRecipe(800, <minecraft:chainmail_helmet>, <liquid:iron.molten> * 720);
-Crucible.addRecipe(800, <minecraft:chainmail_leggings>, <liquid:iron.molten> * 1008);
+Crucible.addRecipe(800, <minecraft:chainmail_boots>, <liquid:iron.molten> * 128);
+Crucible.addRecipe(800, <minecraft:chainmail_chestplate>, <liquid:iron.molten> * 256);
+Crucible.addRecipe(800, <minecraft:chainmail_helmet>, <liquid:iron.molten> * 160);
+Crucible.addRecipe(800, <minecraft:chainmail_leggings>, <liquid:iron.molten> * 224);
 
 //add melting recipes for elemental essences for fun
 Crucible.addRecipe(1200, fireEssence, <liquid:lava> * 250);

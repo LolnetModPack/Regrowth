@@ -5,6 +5,7 @@ import mods.nei.NEI;
 import mods.botania.Lexicon;
 import minetweaker.item.IItemStack;
 import mods.chisel.Groups;
+import mods.gardenstuff.CompostBin;
 
 //Value declaration
 //Tool Parts
@@ -173,6 +174,26 @@ val plankRowan = <witchery:witchwood>;
 val slabAlder = <witchery:witchwoodslab:1>;
 val slabHawthorn = <witchery:witchwoodslab:2>;
 val slabRowan = <witchery:witchwoodslab>;
+val oreNetherSulfur = <NetherOres:tile.netherores.ore.1:5>;
+val sulfur = <Railcraft:dust:1>;
+val dictBarley = <ore:cropBarley>;
+val cropBarley = <Natura:barleyFood:0>;
+val seedBarley = <Natura:barley.seed:0>;
+val cropCotton = <Natura:barleyFood:3>;
+val seedCotton = <Natura:barley.seed:1>;
+val dictCotton = <ore:cropCotton>;
+val dictAllseed = <ore:listAllseed>;
+val belladonna = <witchery:ingredient:21>;
+val flourWheat = <Natura:barleyFood:2>;
+val flourBarley = <Natura:barleyFood:1>;
+val mortarPestle = <Botania:pestleAndMortar>;
+val mariLimestone = [<Mariculture:limestone:1>, <Mariculture:limestone:2>, <Mariculture:limestone:3>, <Mariculture:limestone:4>, <Mariculture:limestone:5>, <Mariculture:limestone:6>, <Mariculture:limestone:7>, <Mariculture:limestone:10>] as IItemStack[];
+val mysteriousMaps = [<Quadrum:secret1>, <Quadrum:secret2>, <Quadrum:secret3>] as IItemStack[];
+val oreNetherSaltpeter = <NetherOres:tile.netherores.ore.1:14>;
+val dustSaltpeter = <Railcraft:dust:2>;
+val waterArtichoke = <witchery:ingredient:69>;
+val wolfsbane = <witchery:ingredient:156>;
+val wormwood = <witchery:ingredient:111>;
 //Barrel Structural Upgrades
 val struct1 = <JABBA:upgradeStructural>;
 val struct3 = <JABBA:upgradeStructural:2>;
@@ -214,9 +235,35 @@ recipes.remove(cactus);
 recipes.removeShaped(woodSlab, [[<ore:plankWood>, <ore:plankWood>, <ore:plankWood>]]);
 recipes.addShaped(woodSlab * 6, [[plankOak, plankOak, plankOak]]);
 recipes.addShaped(woodSlab * 6, [[deadPlanks, deadPlanks, deadPlanks]]);
-recipes.addShaped(slabAlder *6, [[plankAlder, plankAlder, plankAlder]]);
-recipes.addShaped(slabHawthorn *6, [[plankHawthorn, plankHawthorn, plankHawthorn]]);
-recipes.addShaped(slabRowan *6, [[plankRowan, plankRowan, plankRowan]]);
+recipes.addShaped(slabAlder * 6, [[plankAlder, plankAlder, plankAlder]]);
+recipes.addShaped(slabHawthorn * 6, [[plankHawthorn, plankHawthorn, plankHawthorn]]);
+recipes.addShaped(slabRowan * 6, [[plankRowan, plankRowan, plankRowan]]);
+
+//Add smelting recipe for Nether Sulfur -> Sulfur dust since sulfur ore seems to have gone AWOL
+furnace.addRecipe(sulfur * 6, oreNetherSulfur);
+
+//Change output of Nether Saltpeter to match sulfur
+furnace.remove(<*>, oreNetherSaltpeter);
+furnace.addRecipe(dustSaltpeter * 6, oreNetherSaltpeter);
+
+//fix natura oredicts?
+dictBarley.add(cropBarley);
+dictCotton.add(cropCotton);
+dictAllseed.add(seedCotton);
+
+//add compostables
+CompostBin.add(cropBarley, 150);
+CompostBin.add(belladonna, 150);
+CompostBin.add(mandrake, 150);
+CompostBin.add(waterArtichoke, 150);
+CompostBin.add(wolfsbane, 150);
+CompostBin.add(wormwood, 150);
+
+//Make flour require M&P - fixes wheat seeds recipe conflict
+recipes.remove(flourBarley);
+recipes.remove(flourWheat);
+recipes.addShapeless(flourBarley, [cropBarley, mortarPestle.reuse()]);
+recipes.addShapeless(flourWheat, [wheat, mortarPestle.reuse()]);
 
 //make decorative quadrum blocks obtainable, mostly through Chisel
 furnace.addRecipe(singedPlank, <ore:plankWood>);
@@ -234,3 +281,13 @@ Groups.addVariation("cobblestone", burntCobbleTrans);
 recipes.addShaped(singedSlab * 6, [[singedPlank, singedPlank, singedPlank]]);
 recipes.addShaped(singedPlank, [[singedSlab], [singedSlab]]);
 recipes.addShaped(singedStairs * 4, [[singedPlank, null, null], [singedPlank, singedPlank, null], [singedPlank, singedPlank, singedPlank]]);
+
+//make mariculture limestone variants chiselable
+for i, mariLime in mariLimestone {
+	Groups.addVariation("limestone", mariLime);
+}
+
+//add tooltip to mysterious maps
+for j, map in mysteriousMaps {
+	map.addTooltip(format.gold("Right click me to start a treasure hunt!"));
+}

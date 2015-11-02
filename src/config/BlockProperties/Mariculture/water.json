@@ -1,0 +1,22 @@
+{
+  "_name": "Mariculture:water",
+  "stats": {
+    "opacity": 0,
+    "brightness": 0,
+    "hardness": 25.0,
+    "resistance": 50.0,
+    "sound": "snow",
+    "slipperiness": 0.6,
+    "tool_data": [
+      {
+        "_meta": 0,
+        "tool": "pickaxe",
+        "level": 1
+      }
+    ]
+  },
+  "break_speed": [],
+  "drops": [],
+  "harvest": [],
+  "xp": []
+}

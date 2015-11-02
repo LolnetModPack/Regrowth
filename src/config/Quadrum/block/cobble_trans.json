@@ -2,7 +2,6 @@
     "name": "CobblestoneTrans",
     "default-texture": "cobblestone_trans",
 	"texture-info": {
-        // Any sides not defined here will use the defined default texture
         "front": "cobblestone_trans",
         "back": "cobblestone_trans",
         "left": "cobblestone_trans",
@@ -15,8 +14,8 @@
     "type": "block",
 	"drops-self": "false",
 	"drops": [
-		{"item": "minecraft:cobblestone", "amount": "1", "damage": "1"}
+		{"item": "minecraft:cobblestone", "amount": "1", "damage": "0"}
     ],
 	"flammable": "false",
-    "requires-tool": "false"
+    "requires-tool": "true"
 }
